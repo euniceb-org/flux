@@ -14,7 +14,4 @@ spec:
         - image: dashaun/org.euniceb.service.gateway:v0.0.1
           env:
           - name: ZIPKIN_ENDPOINT
-            value: http://openzipkin.euniceb-org.svc.cluster.local:9411/api/v2/spans
-          envFrom:
-          - secretRef:
-              name: redis-cloud  
+            value: http://openzipkin.euniceb-org.svc.cluster.local:9411/api/v2/spans 
